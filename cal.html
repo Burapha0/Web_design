@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="car.js"></script>
+    <style>
+        #field {
+            margin: 20px 40%;
+            border-radius: 10px;
+            cursor: text;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+
+        <fieldset id="field">
+            <legend>แบบฟอร์มคำนวณการผ่อน</legend><br> ราคา (บาท) <input type="text" id="price" class="inp"><br><br> ดาวน์ (%) <input type="text" id="down" class="inp"><br><br> การผ่อน (งวด) <input type="text" id="round" class="inp"><br><br> ดอกเบี้ย (%)
+            <input type="text" id="interest" class="inp">
+            <p></p>
+            <input type="button" value="calculate" onclick="calprice()">
+            <input type="reset" value="reset">
+            <a href="Index.html"><input type="button" value="กลับหน้าแรก"></a>
+
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>

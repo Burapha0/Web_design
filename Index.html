@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="car.js"></script>
+    <title>Carti Carcenter</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <a class="logo" href="Index.html"><img src="logo.png" width="240px"></a>
+            </div>
+            <ul>
+                <li>
+                    <a href="#">ซื้อรถยนต์</a>
+                    <ul>
+                        <li><a href="Car2.html">รถมือสอง</a></li>
+                        <li><a href="New Car.html">รถใหม่</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">ยี่ห้อรถ</a>
+                    <ul>
+                        <li>
+                            <a href="#">Honda</a>
+                            <ul>
+                                <li><a href="City.html">City</a></li>
+                                <li><a href="Civic.html">Civic</a></li>
+                                <li><a href="Accord.html">Accord</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Mazda</a>
+                            <ul>
+                                <li><a href="Mazda2.html">Mazda 2</a></li>
+                                <li><a href="Mazda3.html">Mazda 3</a></li>
+                                <li><a href="CX-30.html">Mazda CX-30</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Nissan</a>
+                            <ul>
+                                <li><a href="March.html">March</a></li>
+                                <li><a href="Almera.html">Almera</a></li>
+                                <li><a href="GT-R.html">GT-R</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">MG</a>
+                            <ul>
+                                <li><a href="MG3.html">MG 3</a></li>
+                                <li><a href="MG5.html">MG 5</a></li>
+                                <li><a href="ZS.html">MG ZS</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Toyota</a>
+                            <ul>
+                                <li><a href="Vios.html">Vios</a></li>
+                                <li><a href="Altis.html">Altis</a></li>
+                                <li><a href="Camry.html">Camry</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="Enter">
+                    <a href="login.html">เข้าสู่ระบบ</a>
+                    <a href="signup.html">สมัครสมาชิก</a>
+                </li>
+                <li>
+                    <input type="text" class="in" id="text" placeholder=" ค้นหารถที่นี่" onclick="cleartext()" onkeypress='return keyEnter(event)'>
+                    <input type="button" value="ค้นหา" class="but" onclick="findcar()">
+                    <input type="button" value="จำนวนรถใน stock" class="numcar" onclick="total()">
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="img"></div>
+
+    <div class="band">
+
+        <div class="item-1">
+            <a class="card" href="popular.html">
+                <div class="thumb" style="background-image: url(MG/5/1.jpg);"></div>
+                <article>
+                    <h1>รถยอดนิยม</h1>
+                    <span>รายการแนะนำ</span>
+                </article>
+            </a>
+        </div>
+        <div class="item-2">
+            <a class="card" href="Car2.html">
+                <div class="thumb" style="background-image: url(Honda/Accord/1.jpg);"></div>
+                <article>
+                    <h1>รถมือสอง</h1>
+                    <span>ดูเพิ่มเติม</span>
+                </article>
+            </a>
+        </div>
+        <div class="item-3">
+            <a class="card" href="City.html">
+                <div class="thumb" style="background-image: url(Honda/City/1.jpg);"></div>
+                <article>
+                    <h1>2018 Honda City 1.5 (ปี 14-18) V i-VTEC Sedan</h1>
+                    <span>ดูเพิ่มเติม</span>
+                </article>
+            </a>
+        </div>
+        <div class="item-4">
+            <a class="card" href="Vios.html">
+                <div class="thumb" style="background-image: url(Toyota/Vios/1.jpg);"></div>
+                <article>
+                    <h1>2017 Toyota Vios 1.5 (ปี 13-17) G Sedan</h1>
+                    <span>ดูเพิ่มเติม</span>
+                </article>
+            </a>
+        </div>
+        <div class="item-5">
+            <a class="card" href="Altis.html">
+                <div class="thumb" style="background-image: url(Toyota/Altis/1.jpg);"></div>
+                <article>
+                    <h1>2016 Toyota Corolla Altis 1.6 (ปี 14-18) G Sedan</h1>
+                    <span>ดูเพิ่มเติม</span>
+                </article>
+            </a>
+        </div>
+        <div class="item-6">
+            <a class="card" href="Mazda2.html">
+                <div class="thumb" style="background-image: url(Mazda/2/1.jpg);"></div>
+                <article>
+                    <h1>2021 Mazda 2 1.3 (ปี 15-18) S Sedan</h1>
+                    <span>ดูเพิ่มเติม</span>
+                </article>
+            </a>
+        </div>
+        <div class="item-7">
+            <a class="card" href="March.html">
+                <div class="thumb" style="background-image: url(Nissan/March/1.jpeg);"></div>
+                <article>
+                    <h1>2019 Nissan March 1.2 (ปี 10-16) E Hatchback</h1>
+                    <span>ดูเพิ่มเติม</span>
+                </article>
+            </a>
+        </div>
+
+    </div>
+
+    <h1 class="pad">เลือกจากยี่ห้อยอดนิยม</h1>
+
+    <div>
+        <main class="grid">
+            <article>
+                <img src="Honda/logo.png">
+                <div class="text">
+                    <h3>Honda</h3>
+                    <a href="Honda.html"><button>click</button></a>
+                </div>
+            </article>
+            <article>
+                <img src="Mazda/logo.png">
+                <div class="text">
+                    <h3>Mazda</h3>
+                    <a href="Mazda.html"><button>click</button></a>
+                </div>
+            </article>
+            <article>
+                <img src="MG/logo.png">
+                <div class="text">
+                    <h3>MG</h3>
+                    <a href="MG.html"><button>click</button></a>
+                </div>
+            </article>
+            <article>
+                <img src="Nissan/logo.png">
+                <div class="text">
+                    <h3>Nissan</h3>
+                    <a href="Nissan.html"><button>click</button></a>
+                </div>
+            </article>
+            <article>
+                <img src="Toyota/logo.png">
+                <div class="text">
+                    <h3>Toyota</h3>
+                    <a href="Toyota.html"><button>click</button></a>
+                </div>
+            </article>
+        </main>
+    </div>
+
+    <footer class="bottom-footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">watch</a></li>
+                        <li><a href="#">bag</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">dress</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/salamander.doraguniru.3/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/bb_buzed/"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

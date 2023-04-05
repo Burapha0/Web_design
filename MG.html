@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="Car model.css">
+    <script src="car.js"></script>
+    <title>MG</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <a class="logo" href="Index.html"><img src="logo.png" width="240px"></a>
+            </div>
+            <ul>
+                <li>
+                    <a href="#">ซื้อรถยนต์</a>
+                    <ul>
+                        <li><a href="Car2.html">รถมือสอง</a></li>
+                        <li><a href="New Car.html">รถใหม่</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">ยี่ห้อรถ</a>
+                    <ul>
+                        <li>
+                            <a href="#">Honda</a>
+                            <ul>
+                                <li><a href="City.html">City</a></li>
+                                <li><a href="#">Civic</a></li>
+                                <li><a href="#">Accord</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Mazda</a>
+                            <ul>
+                                <li><a href="#">Mazda 2</a></li>
+                                <li><a href="#">Mazda 3</a></li>
+                                <li><a href="#">Mazda CX-30</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Nissan</a>
+                            <ul>
+                                <li><a href="#">March</a></li>
+                                <li><a href="#">Almera</a></li>
+                                <li><a href="#">GT-R</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">MG</a>
+                            <ul>
+                                <li><a href="#">MG 3</a></li>
+                                <li><a href="#">MG 5</a></li>
+                                <li><a href="#">MG ZS</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Toyota</a>
+                            <ul>
+                                <li><a href="#">Vios</a></li>
+                                <li><a href="#">Altis</a></li>
+                                <li><a href="#">Camry</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="Enter">
+                    <a href="login.html">เข้าสู่ระบบ</a>
+                    <a href="signup.html">สมัครสมาชิก</a>
+                </li>
+                <li>
+                    <input type="text" class="in" id="text" placeholder=" ค้นหารถที่นี่" onclick="cleartext()" onkeypress='return keyEnter(event)'>
+                    <input type="button" value="ค้นหา" class="but" onclick="findcar()">
+                    <input type="button" value="จำนวนรถใน stock" class="numcar" onclick="total()">
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="img"></div>
+
+    <h1 class="brand">MG Zone</h1>
+
+    <div class="band">
+        <div class="item-1">
+            <a class="card" href="MG3.html">
+                <div class="thumb" style="background-image: url(MG/3/1.jpg);"></div>
+                <article>
+                    <h1>2020 MG MG3 1.5 (ปี 18-22) V Hatchback</h1>
+                    <span>349,000 บาท</span>
+                </article>
+            </a>
+        </div>
+        <div class="item-2">
+            <a class="card" href="MG5.html">
+                <div class="thumb" style="background-image: url(MG/5/1.jpg);"></div>
+                <article>
+                    <h1>2017 MG MG5 1.5 (ปี 15-18) X Sedan</h1>
+                    <span>295,000 บาท</span>
+                </article>
+            </a>
+        </div>
+        <div class="item-3">
+            <a class="card" href="ZS.html">
+                <div class="thumb" style="background-image: url(MG/ZS/1.jpg);"></div>
+                <article>
+                    <h1>2019 MG ZS 1.5 (ปี 17-21) X SUV AT</h1>
+                    <span>498,000 บาท</span>
+                </article>
+            </a>
+        </div>
+    </div>
+
+    <footer class="bottom-footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">watch</a></li>
+                        <li><a href="#">bag</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">dress</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/salamander.doraguniru.3/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/bb_buzed/"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

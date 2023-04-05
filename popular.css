@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mitr', sans-serif;
+}
+
+body {
+    background: rgb(255, 238, 238);
+}
+
+nav {
+    background: rgb(0, 0, 0);
+}
+
+nav:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+nav .logo {
+    float: left;
+    line-height: 70px;
+    padding-left: 15px;
+    margin-top: 5px;
+}
+
+nav ul {
+    float: left;
+    list-style: none;
+    position: relative;
+    padding: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    background: #000000;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 16px;
+    padding: 8px 15px;
+}
+
+nav ul li a:hover {
+    color: cyan;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #33ffff, 0 0 5px #66ffff;
+}
+
+nav ul ul li a:hover {
+    color: cyan;
+    box-shadow: none;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 90px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+}
+
+nav ul li:hover>ul {
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul ul li {
+    position: relative;
+    margin: 0px;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(82, 82, 82, 0.3);
+}
+
+nav ul ul li a {
+    line-height: 50px;
+}
+
+nav ul ul ul li {
+    position: relative;
+    top: -90px;
+    left: 130px;
+}
+
+nav .Enter {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
+/*หน้ายอดนิยม*/
+
+.box {
+    background-color: white;
+    padding: 20px 40px;
+    margin: 20px 300px;
+    border-radius: 20px;
+}
+
+.box img {
+    width: 100%;
+}
+
+.h1 {
+    margin: 10px 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+.botton {
+    color: black;
+    background-color: lightgray;
+    padding: 8px;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.botton1 {
+    color: black;
+    background-color: lightgray;
+    padding: 8px;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+
+/*หน้ายอดนิยม*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.bottom-footer {
+    background-color: rgb(0, 0, 0);
+    padding: 70px 0;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 600;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #ffdada;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    color: #ffffff;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+.in {
+    padding: 5px 10px;
+}
+
+.but {
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+.but:hover {
+    cursor: pointer;
+    color: cyan;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #33ffff, 0 0 5px #66ffff;
+}
+
+.numcar {
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+.numcar:hover {
+    cursor: pointer;
+    color: cyan;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #33ffff, 0 0 5px #66ffff;
+}
